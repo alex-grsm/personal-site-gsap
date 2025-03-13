@@ -1,0 +1,22 @@
+@mixin font-face($font-family, $url, $weight, $style) {
+    @font-face {
+        font-family: "#{$font-family}";
+        src: url('../fonts/#{$url}.woff2') format("woff2");
+        font-weight: #{$weight};
+        font-display: swap;
+        font-style: $style;
+    }
+}
+
+@include font-face("WanoQuin", "WanoQuin-ExtraBold", 800, normal);
+// Lato font variants
+@include font-face("Lato", "Lato-Thin", 100, normal);
+// @include font-face("Lato", "Lato-ThinItalic", 100, italic);
+@include font-face("Lato", "Lato-Light", 300, normal);
+// @include font-face("Lato", "Lato-LightItalic", 300, italic);
+@include font-face("Lato", "Lato-Regular", 400, normal);
+// @include font-face("Lato", "Lato-Italic", 400, italic);
+@include font-face("Lato", "Lato-Bold", 700, normal);
+// @include font-face("Lato", "Lato-BoldItalic", 700, italic);
+@include font-face("Lato", "Lato-Black", 900, normal);
+// @include font-face("Lato", "Lato-BlackItalic", 900, italic);

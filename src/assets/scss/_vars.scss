@@ -1,0 +1,19 @@
+:root {
+    --font-family: 'Lato';
+    --font-second: 'WanoQuin';
+
+    --index: calc(1vw + 1vh);
+    --padding-base: calc(var(--index) * 1.2);
+    --gap-base: calc(var(--index) * 0.8);
+    --gap-large: calc(var(--index) * 2.5);
+    --spacing-section: calc(var(--index) * 3.5);
+    // --transition: 1.5s cubic-bezier(.05, .5, 0, 1);
+    
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+}
